@@ -1,6 +1,11 @@
-/* Light blue background for the whole page */
-body, .navbar {
+/* Light blue background for the main page */
+body{
   background-color: #f0f8ff !important;  /* AliceBlue */
+}
+
+/* Light blue background for the navbar */
+.navbar {
+  background-color: #f0f1ff !important;  /* AliceBlue */
 }
 
 /* Banner background purple */
@@ -38,8 +43,18 @@ body, .navbar {
 /* Hover effect for category/tag label */
 .listing-category:hover,
 .quarto-category:hover {
-  background-color: #dcd6f7;  /* soft lavender */
+  background-color: #ffc8c2;  /* soft lavender */
   color: #3C0D6E;             /* purple text */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
+.listing-title a:hover {
+  color: black;
+}
+
+.listing-description a:hover {
+  color: black;
+}
+
+

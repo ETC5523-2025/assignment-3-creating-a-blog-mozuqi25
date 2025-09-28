@@ -103,7 +103,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -172,7 +172,30 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#problem-introduction" id="toc-problem-introduction" class="nav-link active" data-scroll-target="#problem-introduction">Problem Introduction</a></li>
+  <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
+  <ul class="collapse">
+  <li><a href="#site-characteristics" id="toc-site-characteristics" class="nav-link" data-scroll-target="#site-characteristics">Site characteristics</a></li>
+  <li><a href="#temporal-fluctuations" id="toc-temporal-fluctuations" class="nav-link" data-scroll-target="#temporal-fluctuations">Temporal fluctuations</a></li>
+  <li><a href="#non-linear-relationships" id="toc-non-linear-relationships" class="nav-link" data-scroll-target="#non-linear-relationships">Non-linear relationships</a></li>
+  <li><a href="#variable-importance" id="toc-variable-importance" class="nav-link" data-scroll-target="#variable-importance">Variable importance</a></li>
+  <li><a href="#model-performance" id="toc-model-performance" class="nav-link" data-scroll-target="#model-performance">Model performance</a></li>
+  </ul></li>
+  <li><a href="#brief-methods" id="toc-brief-methods" class="nav-link" data-scroll-target="#brief-methods">Brief Methods</a>
+  <ul class="collapse">
+  <li><a href="#generalised-additive-models-gams" id="toc-generalised-additive-models-gams" class="nav-link" data-scroll-target="#generalised-additive-models-gams">1. Generalised Additive Models (GAMs)</a></li>
+  <li><a href="#arima-autoregressive-integrated-moving-average" id="toc-arima-autoregressive-integrated-moving-average" class="nav-link" data-scroll-target="#arima-autoregressive-integrated-moving-average">2. ARIMA (Autoregressive Integrated Moving Average)</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -184,17 +207,25 @@ window.Quarto = {
 <p>The study demonstrates that nearly all variation in nitrate concentration (up to 99%) can be explained through a two-step modeling framework: first, Generalised Additive Models (GAMs) capture non-linear relationships between nitrate and other water-quality variables; second, ARIMA accounts for temporal auto-correlation.</p>
 <p>Although the relative importance of variables differs between sites, the same set of water-quality variables consistently enters the best models: time, temperature, dissolved oxygen, specific conductance, turbidity (log-transformed), and surface water elevation. This shows the modeling framework is transferable across sites, although specific relationships must be recalibrated locally.</p>
 <p>This approach is highly relevant for water-quality management, offering a cost-effective monitoring strategy when nitrate sensors are too expensive or when data gaps occur.</p>
-<p><strong>II. Problem Introduction</strong></p>
+<section id="problem-introduction" class="level1">
+<h1>Problem Introduction</h1>
 <p>Nitrate is a key parameter in freshwater quality, linked to eutrophication and ecosystem health. However, continuous high-frequency monitoring of nitrate faces two major challenges: the high cost of nitrate sensors and the frequent occurrence of missing data due to sensor failures.</p>
 <p>Earlier predictive models have attempted to overcome these limitations. Artificial Neural Networks can deliver high accuracy, but are opaque and difficult to interpret. Generalised Linear Mixed Models (GLMMs) are more transparent but restricted to linear relationships. Random Forest Regression (RFR) is flexible, but results remain opaque and cannot be extrapolated beyond beyond the data range.</p>
 <p>This study addressed the gap by applying GAMMs, which combine the ability to model non-linear ecological relationships with the capacity to capture temporal auto-correlation. The result is a framework that is both accurate and interpretable.</p>
-<p><strong>III. Key Results</strong></p>
-<p>&nbsp;<strong>Site characteristics</strong></p>
+</section>
+<section id="key-results" class="level1">
+<h1>Key Results</h1>
+<section id="site-characteristics" class="level2">
+<h2 class="anchored" data-anchor-id="site-characteristics">Site characteristics</h2>
 <p>The study compared three contrasting sites: Arikaree (semi-arid, Colorado), Caribou (subarctic, Alaska), and Lewis Run (temperate, urban/agricultural, Virginia). Initial water-quality conditions varied substantially. Lewis Run has the highest nitrate concentrations, Caribou intermediate, and Arikaree the lowest. Other variables such as temperature, dissolved oxygen, conductance, and turbidity also displayed distinct patterns across sites.</p>
-<p>&nbsp;<strong>Temporal fluctuations</strong></p>
+</section>
+<section id="temporal-fluctuations" class="level2">
+<h2 class="anchored" data-anchor-id="temporal-fluctuations">Temporal fluctuations</h2>
 <p>Sensor data revealed both daily diel cycles and responses to flow events. For example, in Caribou nitrate and dissolved oxygen tended to rise during the day, whereas in Arikaree nitrate declined. During flow events, nitrate increased with rising elevation in Arikaree but decreased in Lewis Run.</p>
 <p><span style="color: white;">white-break</span></p>
-<p>&nbsp;<strong>Non-linear relationships</strong></p>
+</section>
+<section id="non-linear-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="non-linear-relationships">Non-linear relationships</h2>
 <p>The GAM analysis highlighted non-linear and site-specific relationships (see <a href="#fig-3" class="quarto-xref">Figure&nbsp;1</a>). In Caribou, temperature correlated positively with nitrate, while conductivity correlated negatively. In Arikaree, temperature showed a weak negative influence. In Lewis Run, almost all variables were influential, with mostly positive relationships.</p>
 <div id="fig-3" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -206,7 +237,9 @@ Figure&nbsp;1: Non-linear relationships between water-quality variables and nitr
 </figcaption>
 </figure>
 </div>
-<p>&nbsp;<strong>Variable importance</strong></p>
+</section>
+<section id="variable-importance" class="level2">
+<h2 class="anchored" data-anchor-id="variable-importance">Variable importance</h2>
 <p>Deviance explained indicated that the relative importance of variables differs among sites (see <a href="#fig-4" class="quarto-xref">Figure&nbsp;2</a>). In Arikaree, water-quality variables contributed little (&lt;5%) while the ARIMA component explained about 25% of the variance. In Caribou, specific conductance was dominant (~10%). In Lewis Run, all variables contributed significantly (11–15%), with conductance again strongest.</p>
 <div id="fig-4" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -218,21 +251,26 @@ Figure&nbsp;2: Relative importance of variables at each site. Total deviance exp
 </figcaption>
 </figure>
 </div>
-<p>&nbsp;<strong>Model performance</strong></p>
+</section>
+<section id="model-performance" class="level2">
+<h2 class="anchored" data-anchor-id="model-performance">Model performance</h2>
 <p>Using GAMs alone, the models explained about 75–85% of nitrate variation, showing that non-linear relationships with other water-quality variables capture most of the signal. Yet, residuals still showed temporal patterns. By adding ARIMA to model this auto-correlation, the combined GAMMs explained up to 99% of the variation.</p>
 <p>Approximate AIC values were consistently lower for GAMMs than for GAMs, confirming that the improvement reflected a better model, not just extra complexity. In short, including the temporal component made the models both more accurate and more reliable.</p>
-<p><strong>IV. Brief Methods</strong></p>
+</section>
+</section>
+<section id="brief-methods" class="level1">
+<h1>Brief Methods</h1>
 <p>The data came from the National Ecological Observatory Network (NEON), which provides high-frequency in-situ water-quality measurements at three contrasting sites observed. Most variables (temperature, dissolved oxygen, conductivity, turbidity, surface water elevation) were measured every 1 minute, while nitrate was measured every 15 minutes using a more costly sensor. To align the datasets, all variables were aggregated to a common 15-minute interval.</p>
 <p>The modeling framework was built in two steps:</p>
-<section id="generalised-additive-models-gams" class="level6">
-<h6 class="anchored" data-anchor-id="generalised-additive-models-gams"><strong>1. Generalised Additive Models (GAMs)</strong></h6>
+<section id="generalised-additive-models-gams" class="level2">
+<h2 class="anchored" data-anchor-id="generalised-additive-models-gams">1. Generalised Additive Models (GAMs)</h2>
 <ul>
 <li><p>Nitrate was modeled as a non-linear function of time, temperature, dissolved oxygen, conductivity, turbidity (log-transformed), and surface water elevation.</p></li>
 <li><p>Variable selection was guided by stepwise AIC and multicollinearity was checked using VIF.</p></li>
 </ul>
 </section>
-<section id="arima-autoregressive-integrated-moving-average" class="level6">
-<h6 class="anchored" data-anchor-id="arima-autoregressive-integrated-moving-average"><strong>2. ARIMA (Autoregressive Integrated Moving Average)</strong></h6>
+<section id="arima-autoregressive-integrated-moving-average" class="level2">
+<h2 class="anchored" data-anchor-id="arima-autoregressive-integrated-moving-average">2. ARIMA (Autoregressive Integrated Moving Average)</h2>
 <ul>
 <li><p>GAM residuals were modeled with ARIMA to capture temporal auto-correlation.</p></li>
 <li><p>The optimal ARIMA model varied by site.</p></li>
@@ -240,10 +278,15 @@ Figure&nbsp;2: Relative importance of variables at each site. Total deviance exp
 <p>The final GAMM combined both components, providing robust and interpretable models of nitrate dynamics. The overall model framework can be expressed as follows:</p>
 <p><span class="math inline">\(Nitrate(t)=f(time,temperature,DO,conductance,log(turbidity),surface\ elevation)+ARIMA\ residuals\)</span></p>
 <p>Here, <span class="math inline">\(f\)</span> represents smooth non-linear functions estimated by the GAM. The ARIMA residual term models short-term temporal dependence in the series. Time appears as a covariate in the GAM to capture systematic cycles (diel or seasonal patterns), and as the time index <span class="math inline">\(t\)</span> of the series, which ARIMA uses to describe correlations between consecutive observations. The modeling might be computationally intensive, but it remains feasible with available tools and is suitable for applied monitoring.</p>
-<p><strong>V. Conclusion</strong></p>
+</section>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
 <p>This study demonstrates that GAMMs are an accurate and interpretable framework for modeling nitrate dynamics in rivers. The approach is practically relevant because it reduces reliance on costly nitrate sensors, allows for imputation of missing data, and can be applied across sites with local recalibration.</p>
 <p>For the company, this framework can be integrated into broader water-quality monitoring strategies. Pilot testing with local datasets is recommended to adjust the relationships among variables and confirm the model’s suitability for local ecosystem conditions.</p>
-<p><strong>VI. References</strong></p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 <p>Kermorvant, C., Liquet, B., Litt, G., Hyndman, R. J., Peterson, E. E., Leigh, C., &amp; Mengersen, K. (2023). Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data. PLOS ONE, 18(6), e0287640. <a href="https://doi.org/10.1371/journal.pone.0287640" class="uri">https://doi.org/10.1371/journal.pone.0287640</a></p>
 <p><img src="thumbnail.jpg" class="img-fluid"></p>
 
