@@ -13,6 +13,8 @@
     html:
       theme: cosmo
       css: styles.css
+      mainfont: system-ui
+      headingfont: Verdana
 
 
 
