@@ -6,7 +6,8 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/ETC5523-2025/assignment-3-creating-a-blog-mozuqi25
+      href: https://github.com/mozuqi25/
+
 
 ---
 

@@ -95,4 +95,4 @@ For the company, this framework can be integrated into broader water-quality mon
 
 Kermorvant, C., Liquet, B., Litt, G., Hyndman, R. J., Peterson, E. E., Leigh, C., & Mengersen, K. (2023). Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data. PLOS ONE, 18(6), e0287640. <https://doi.org/10.1371/journal.pone.0287640>
 
-![](thumbnail.jpg)
+

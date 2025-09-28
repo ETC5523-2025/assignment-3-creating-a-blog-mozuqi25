@@ -1,16 +1,16 @@
 /* Light blue background for the main page */
 body{
-  background-color: #f0f8ff !important;  /* AliceBlue */
+  background-color: #fcfcff !important;  /* AliceBlue */
 }
 
 /* Light blue background for the navbar */
 .navbar {
-  background-color: #f0f1ff !important;  /* AliceBlue */
+  background-color: #e6e6fc !important;  /* AliceBlue */
 }
 
 /* Banner background purple */
 .quarto-title-banner {
-  background-color: #3C0D6E !important;
+  background-color: #00008B !important;
 }
 
 /* Banner text white */
@@ -57,4 +57,5 @@ body{
   color: black;
 }
 
-
+.navbar{ box-shadow:0 2px 8px rgba(0,0,0,.06); }
+img{ border-radius:12px; }
