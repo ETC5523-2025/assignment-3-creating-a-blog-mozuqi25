@@ -1,4 +1,45 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/* Light blue background for the whole page */
+body, .navbar {
+  background-color: #f0f8ff !important;  /* AliceBlue */
+}
+
+/* Banner background purple */
+.quarto-title-banner {
+  background-color: #3C0D6E !important;
+}
+
+/* Banner text white */
+.quarto-title-banner h1,
+.quarto-title-banner .title {
+  color: white !important;
+}
+
+
+/* Default tag style (for light background) */
+.listing-category,
+.quarto-category {
+  background-color: #e9ecef;  /* light grey */
+  color: #333;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  border: none;
+}
+
+/* Tag inside banner (for darker bg / on purple) */
+.quarto-title-banner .listing-category,
+.quarto-title-banner .quarto-category {
+  background-color: white;   /* white pill */
+  color: #3C0D6E;            /* purple text */
+  font-weight: 600;
+}
+
+
+/* Hover effect for category/tag label */
+.listing-category:hover,
+.quarto-category:hover {
+  background-color: #dcd6f7;  /* soft lavender */
+  color: #3C0D6E;             /* purple text */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }

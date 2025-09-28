@@ -1,18 +1,18 @@
-project:
-  type: website
-  output-dir: docs
+  project:
+    type: website
+    output-dir: docs
 
-website:
-  title: "blog-template"
-  navbar:
-    right:
-      - about.qmd
-      - icon: github
-        href: https://github.com/ETC5523-2025/assignment-3-creating-a-blog-mozuqi25
-format:
-  html:
-    theme: cosmo
-    css: styles.css
+  website:
+    title: "blog-template"
+    navbar:
+      right:
+        - about.qmd
+        - icon: github
+          href: https://github.com/ETC5523-2025/assignment-3-creating-a-blog-mozuqi25
+  format:
+    html:
+      theme: cosmo
+      css: styles.css
 
 
 
