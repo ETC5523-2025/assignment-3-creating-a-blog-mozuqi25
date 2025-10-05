@@ -1,16 +1,23 @@
-/* Light blue background for the main page */
-body{
-  background-color: #fcfcff !important;  /* AliceBlue */
+
+
+/* Apply beige paper texture to the background */
+body {
+  background-color: #e6d7c3; /* fallback beige */
+  background-image: url("images/paper-bg.jpg");
+  background-repeat: repeat;       /* tile texture */
+  background-attachment: fixed;    /* stays still when scrolling */
+  background-size: auto;           /* keeps natural texture size */
 }
 
-/* Light blue background for the navbar */
+
+/* background for the navbar */
 .navbar {
-  background-color: #e6e6fc !important;  /* AliceBlue */
+  background-color: #f9f0e4 !important;
 }
 
-/* Banner background purple */
+/* Banner background */
 .quarto-title-banner {
-  background-color: #00008B !important;
+  background-color: #664e2a !important;
 }
 
 /* Banner text white */
@@ -20,34 +27,42 @@ body{
 }
 
 
+
 /* Default tag style (for light background) */
 .listing-category,
 .quarto-category {
-  background-color: #e9ecef;  /* light grey */
-  color: #333;
+  background-color: #f5e5ce;  /* light grey */
+  color: #664e2a;
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
   font-size: 0.85rem;
   border: none;
 }
 
-/* Tag inside banner (for darker bg / on purple) */
+/* Tag inside banner (for darker bg ) */
 .quarto-title-banner .listing-category,
 .quarto-title-banner .quarto-category {
   background-color: white;   /* white pill */
-  color: #3C0D6E;            /* purple text */
+  color: #664e2a;            /* purple text */
   font-weight: 600;
 }
 
 
 /* Hover effect for category/tag label */
+.navbar-container a:hover {
+  color: black ;
+}
+
+
 .listing-category:hover,
 .quarto-category:hover {
-  background-color: #ffc8c2;  /* soft lavender */
-  color: #3C0D6E;             /* purple text */
+  background-color: #e0c9a6;  /* soft lavender */
+  color: #664e2a;             /* purple text */
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
+
 
 .listing-title a:hover {
   color: black;
@@ -59,3 +74,19 @@ body{
 
 .navbar{ box-shadow:0 2px 8px rgba(0,0,0,.06); }
 img{ border-radius:12px; }
+
+
+/* TOC Link Styling */
+/* When hovered */
+nav#TOC a:hover {
+  color: #704608 !important ;
+  font-weight: 600;
+}
+
+/* When selected (active) */
+nav#TOC a.active {
+  color: #704608 !important ;
+  font-weight: 600;
+  border-left: 3px solid orange;
+  padding-left: 6px;
+}
