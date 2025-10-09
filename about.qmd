@@ -7,6 +7,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/mozuqi25/
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/mozuqi/
 
 
 ---
