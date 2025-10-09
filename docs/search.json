@@ -1,72 +1,72 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ETC5523 Blog Assessment",
     "section": "",
-    "text": "This is a blog template for the ETC5523 Communicating with Data assessment at Monash University."
+    "text": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality\n\n\n\nwater quality\n\ndata modelling\n\nnitrate\n\n\n\n\n\n\n\n\n\nOct 10, 2025\n\n\nM. Zulkifli Falaqi\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
+    "objectID": "posts/water-quality/index.html",
+    "href": "posts/water-quality/index.html",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "",
-    "text": "Kermorvant et al. (2023) introduced the use of Generalised Additive Mixed Models (GAMMs) to understand nitrate dynamics in rivers using high-frequency in-situ sensor data.\nThe study demonstrates that nearly all variation in nitrate concentration (up to 99%) can be explained through a two-step modeling framework: first, Generalised Additive Models (GAMs) capture non-linear relationships between nitrate and other water-quality variables; second, ARIMA accounts for temporal auto-correlation.\nAlthough the relative importance of variables differs between sites, the same set of water-quality variables consistently enters the best models: time, temperature, dissolved oxygen, specific conductance, turbidity (log-transformed), and surface water elevation. This shows the modeling framework is transferable across sites, although specific relationships must be recalibrated locally.\nThis approach is highly relevant for water-quality management, offering a cost-effective monitoring strategy when nitrate sensors are too expensive or when data gaps occur."
+    "text": "Do we really need a DNA test every time we want to prove that someone is related to their parents? A DNA test surely gives the most precise answer, but it also costs time and money. In many cases, simpler clues, like matching blood type, similar eye color, or shared facial traits, are already strong indicators of family connection. They may not be perfect, but when considered together, they paint a convincing picture.\nRiver scientists face a somewhat similar challenge, except theirs is about keeping up with change, nitrate levels can fluctuate by the minute, so measurements need to be nearly continuous. The dedicated nitrate sensors that can do this are expensive, demanding to maintain, and still only capture readings every 15 minutes.\nMeanwhile, other water-quality sensors, such as those measuring temperature, dissolved oxygen, conductivity, and turbidity, are far cheaper and can record data every minute. By combining signals from these faster, easier instruments, researchers can estimate nitrate levels with impressive accuracy, giving them a near-continuous view of nitrate dynamics without relying solely on the costly nitrate sensor.\nIt’s a bit like reading the river’s family resemblance through its traits rather than sequencing its DNA. This approach, demonstrated in a 2023 study by Kermorvant et al. published in PLOS ONE, shows that smart modeling using affordable sensors can explain up to 99% of nitrate variation, a breakthrough that could transform how we monitor water quality around the world."
   },
   {
-    "objectID": "posts/welcome/index.html#site-characteristics",
-    "href": "posts/welcome/index.html#site-characteristics",
+    "objectID": "posts/water-quality/index.html#site-characteristics",
+    "href": "posts/water-quality/index.html#site-characteristics",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "Site characteristics",
     "text": "Site characteristics\nThe study compared three contrasting sites: Arikaree (semi-arid, Colorado), Caribou (subarctic, Alaska), and Lewis Run (temperate, urban/agricultural, Virginia). Initial water-quality conditions varied substantially. Lewis Run has the highest nitrate concentrations, Caribou intermediate, and Arikaree the lowest. Other variables such as temperature, dissolved oxygen, conductance, and turbidity also displayed distinct patterns across sites."
   },
   {
-    "objectID": "posts/welcome/index.html#temporal-fluctuations",
-    "href": "posts/welcome/index.html#temporal-fluctuations",
+    "objectID": "posts/water-quality/index.html#temporal-fluctuations",
+    "href": "posts/water-quality/index.html#temporal-fluctuations",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "Temporal fluctuations",
     "text": "Temporal fluctuations\nSensor data revealed both daily diel cycles and responses to flow events. For example, in Caribou nitrate and dissolved oxygen tended to rise during the day, whereas in Arikaree nitrate declined. During flow events, nitrate increased with rising elevation in Arikaree but decreased in Lewis Run.\nwhite-break"
   },
   {
-    "objectID": "posts/welcome/index.html#non-linear-relationships",
-    "href": "posts/welcome/index.html#non-linear-relationships",
+    "objectID": "posts/water-quality/index.html#non-linear-relationships",
+    "href": "posts/water-quality/index.html#non-linear-relationships",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "Non-linear relationships",
     "text": "Non-linear relationships\nThe GAM analysis highlighted non-linear and site-specific relationships (see Figure 1). In Caribou, temperature correlated positively with nitrate, while conductivity correlated negatively. In Arikaree, temperature showed a weak negative influence. In Lewis Run, almost all variables were influential, with mostly positive relationships.\n\n\n\n\n\n\nFigure 1: Non-linear relationships between water-quality variables and nitrate. Smooth curves illustrate non-linear effects of each variable. Relationships vary by site, such as positive effects of temperature in Caribou but negative in Arikaree."
   },
   {
-    "objectID": "posts/welcome/index.html#variable-importance",
-    "href": "posts/welcome/index.html#variable-importance",
+    "objectID": "posts/water-quality/index.html#variable-importance",
+    "href": "posts/water-quality/index.html#variable-importance",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "Variable importance",
     "text": "Variable importance\nDeviance explained indicated that the relative importance of variables differs among sites (see Figure 2). In Arikaree, water-quality variables contributed little (&lt;5%) while the ARIMA component explained about 25% of the variance. In Caribou, specific conductance was dominant (~10%). In Lewis Run, all variables contributed significantly (11–15%), with conductance again strongest.\n\n\n\n\n\n\nFigure 2: Relative importance of variables at each site. Total deviance explained by each GAMM was 99% for all three sites."
   },
   {
-    "objectID": "posts/welcome/index.html#model-performance",
-    "href": "posts/welcome/index.html#model-performance",
+    "objectID": "posts/water-quality/index.html#model-performance",
+    "href": "posts/water-quality/index.html#model-performance",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "Model performance",
     "text": "Model performance\nUsing GAMs alone, the models explained about 75–85% of nitrate variation, showing that non-linear relationships with other water-quality variables capture most of the signal. Yet, residuals still showed temporal patterns. By adding ARIMA to model this auto-correlation, the combined GAMMs explained up to 99% of the variation.\nApproximate AIC values were consistently lower for GAMMs than for GAMs, confirming that the improvement reflected a better model, not just extra complexity. In short, including the temporal component made the models both more accurate and more reliable."
   },
   {
-    "objectID": "posts/welcome/index.html#generalised-additive-models-gams",
-    "href": "posts/welcome/index.html#generalised-additive-models-gams",
+    "objectID": "posts/water-quality/index.html#generalised-additive-models-gams",
+    "href": "posts/water-quality/index.html#generalised-additive-models-gams",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "1. Generalised Additive Models (GAMs)",
     "text": "1. Generalised Additive Models (GAMs)\n\nNitrate was modeled as a non-linear function of time, temperature, dissolved oxygen, conductivity, turbidity (log-transformed), and surface water elevation.\nVariable selection was guided by stepwise AIC and multicollinearity was checked using VIF."
   },
   {
-    "objectID": "posts/welcome/index.html#arima-autoregressive-integrated-moving-average",
-    "href": "posts/welcome/index.html#arima-autoregressive-integrated-moving-average",
+    "objectID": "posts/water-quality/index.html#arima-autoregressive-integrated-moving-average",
+    "href": "posts/water-quality/index.html#arima-autoregressive-integrated-moving-average",
     "title": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality",
     "section": "2. ARIMA (Autoregressive Integrated Moving Average)",
     "text": "2. ARIMA (Autoregressive Integrated Moving Average)\n\nGAM residuals were modeled with ARIMA to capture temporal auto-correlation.\nThe optimal ARIMA model varied by site.\n\nThe final GAMM combined both components, providing robust and interpretable models of nitrate dynamics. The overall model framework can be expressed as follows:\n\n\\(Nitrate(t)=f(time,temperature,DO,conductance,log(turbidity),surface\\ elevation)+ARIMA\\ residuals\\)\n\nHere, \\(f\\) represents smooth non-linear functions estimated by the GAM. The ARIMA residual term models short-term temporal dependence in the series. Time appears as a covariate in the GAM to capture systematic cycles (diel or seasonal patterns), and as the time index \\(t\\) of the series, which ARIMA uses to describe correlations between consecutive observations. The modeling might be computationally intensive, but it remains feasible with available tools and is suitable for applied monitoring."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ETC5523 Blog Assessment",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality\n\n\n\nwater quality\n\ndata modelling\n\n\n\n\n\n\n\n\n\nOct 10, 2025\n\n\nM. Zulkifli Falaqi\n\n\n\n\n\nNo matching items"
+    "text": "This is a blog template for the ETC5523 Communicating with Data assessment at Monash University."
   }
 ]

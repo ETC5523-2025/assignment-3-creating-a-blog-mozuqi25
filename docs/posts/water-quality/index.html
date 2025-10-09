@@ -144,6 +144,7 @@ window.Quarto = {
                                 <div class="quarto-categories">
                 <div class="quarto-category">water quality</div>
                 <div class="quarto-category">data modelling</div>
+                <div class="quarto-category">nitrate</div>
               </div>
                   </div>
   </div>
@@ -177,7 +178,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-introduction" id="toc-problem-introduction" class="nav-link active" data-scroll-target="#problem-introduction">Problem Introduction</a></li>
+  <li><a href="#problem-description" id="toc-problem-description" class="nav-link active" data-scroll-target="#problem-description">Problem Description</a></li>
   <li><a href="#key-results" id="toc-key-results" class="nav-link" data-scroll-target="#key-results">Key Results</a>
   <ul class="collapse">
   <li><a href="#site-characteristics" id="toc-site-characteristics" class="nav-link" data-scroll-target="#site-characteristics">Site characteristics</a></li>
@@ -203,15 +204,18 @@ window.Quarto = {
 
 
 
-<p>Kermorvant et al.&nbsp;(2023) introduced the use of Generalised Additive Mixed Models (GAMMs) to understand nitrate dynamics in rivers using high-frequency in-situ sensor data.</p>
-<p>The study demonstrates that nearly all variation in nitrate concentration (up to 99%) can be explained through a two-step modeling framework: first, Generalised Additive Models (GAMs) capture non-linear relationships between nitrate and other water-quality variables; second, ARIMA accounts for temporal auto-correlation.</p>
-<p>Although the relative importance of variables differs between sites, the same set of water-quality variables consistently enters the best models: time, temperature, dissolved oxygen, specific conductance, turbidity (log-transformed), and surface water elevation. This shows the modeling framework is transferable across sites, although specific relationships must be recalibrated locally.</p>
-<p>This approach is highly relevant for water-quality management, offering a cost-effective monitoring strategy when nitrate sensors are too expensive or when data gaps occur.</p>
-<section id="problem-introduction" class="level1">
-<h1>Problem Introduction</h1>
-<p>Nitrate is a key parameter in freshwater quality, linked to eutrophication and ecosystem health. However, continuous high-frequency monitoring of nitrate faces two major challenges: the high cost of nitrate sensors and the frequent occurrence of missing data due to sensor failures.</p>
-<p>Earlier predictive models have attempted to overcome these limitations. Artificial Neural Networks can deliver high accuracy, but are opaque and difficult to interpret. Generalised Linear Mixed Models (GLMMs) are more transparent but restricted to linear relationships. Random Forest Regression (RFR) is flexible, but results remain opaque and cannot be extrapolated beyond beyond the data range.</p>
-<p>This study addressed the gap by applying GAMMs, which combine the ability to model non-linear ecological relationships with the capacity to capture temporal auto-correlation. The result is a framework that is both accurate and interpretable.</p>
+<p>Do we really need a DNA test every time we want to prove that someone is related to their parents? A DNA test surely gives the most precise answer, but it also costs time and money. In many cases, simpler clues, like matching blood type, similar eye color, or shared facial traits, are already strong indicators of family connection. They may not be perfect, but when considered together, they paint a convincing picture.</p>
+<p>River scientists face a somewhat similar challenge, except theirs is about keeping up with change, nitrate levels can fluctuate by the minute, so measurements need to be nearly continuous. The dedicated nitrate sensors that can do this are expensive, demanding to maintain, and still only capture readings every 15 minutes.</p>
+<p>Meanwhile, other water-quality sensors, such as those measuring temperature, dissolved oxygen, conductivity, and turbidity, are far cheaper and can record data every minute. By combining signals from these faster, easier instruments, researchers can estimate nitrate levels with impressive accuracy, giving them a near-continuous view of nitrate dynamics without relying solely on the costly nitrate sensor.</p>
+<p>It’s a bit like reading the river’s family resemblance through its traits rather than sequencing its DNA. This approach, demonstrated in a 2023 study by Kermorvant et al.&nbsp;published in PLOS ONE, shows that smart modeling using affordable sensors can explain up to 99% of nitrate variation, a breakthrough that could transform how we monitor water quality around the world.</p>
+<section id="problem-description" class="level3">
+<h3 class="anchored" data-anchor-id="problem-description">Problem Description</h3>
+<p>Monitoring nitrate in rivers is crucial for understanding how freshwater ecosystems function and respond to change. Nitrate levels can fluctuate rapidly with rainfall, sunlight, and the activity of living organisms in the water. These short-term variations influence oxygen balance, algal growth, and the overall chemical stability of river systems.</p>
+<p>To capture such dynamics, scientists use optical instruments like the <code>SUNA V2</code> nitrate sensor, which records data roughly every 15 minutes. Although this is considered high-frequency compared to traditional manual sampling, the instrument itself is costly, maintenance-intensive, and difficult to deploy widely.</p>
+<p>In contrast, rivers are often equipped with other high-frequency sensors that measure parameters such as temperature, dissolved oxygen, specific conductance, turbidity, and water level every minute. These devices are inexpensive, reliable, and produce continuous data streams. If information from these common sensors can be combined to estimate nitrate accurately, it could provide a far more efficient way to monitor river chemistry and fill spatial or temporal data gaps.</p>
+<p>The study by Kermorvant et al.&nbsp;(2023) examined this possibility, investigating whether relationships between nitrate and other water-quality variables could be modeled strongly enough to explain nitrate variation across contrasting environments.</p>
+<p>Earlier research approached nitrate modeling with different aims and degrees of success. Some studies focused mainly on prediction, using methods such as Artificial Neural Networks or Random Forest Regression, which are powerful but difficult to interpret. Others employed Generalised Linear Mixed Models (GLMMs), which offer interpretability but are restricted to linear relationships.</p>
+<p>To overcome these limitations, Kermorvant adopted Generalised Additive Mixed Models (GAMMs), a method that preserves interpretability while capturing the non-linear and site-specific dynamics of nitrate in rivers. Their goal was to build a framework that is both accurate and understandable, capable of revealing how nitrate interacts with key water-quality variables across diverse ecosystems.</p>
 </section>
 <section id="key-results" class="level1">
 <h1>Key Results</h1>
