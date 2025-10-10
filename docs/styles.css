@@ -70,3 +70,11 @@ nav#TOC a.active {
   border-left: 3px solid orange;
   padding-left: 6px;
 }
+
+
+.nav-footer, .nav-footer .container-fluid {
+  background-color:  #664e2a !important;
+  color: #ffffff !important;
+}
+.nav-footer a { color: #ffffff !important; }
+.nav-footer a:hover { opacity: .85; }
