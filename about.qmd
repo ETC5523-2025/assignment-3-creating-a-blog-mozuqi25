@@ -1,8 +1,9 @@
 ---
-title: "About"
-image: profile.jpg
+title: "M. Zulkifli Falaqi"
+image: profpic.png
+page-layout: full 
 about:
-  template: jolla
+  template: trestles
   links:
     - icon: github
       text: Github
@@ -14,4 +15,12 @@ about:
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi, I'm Zul 👋🏻
+
+I'm currently studying a Master of Business Analytics at Monash University, Australia, I’m driven to become an empowered person, learning not just to consume insights, but to create them. Through evidence-based, ethical, and reproducible data practices, I’m developing the analytical and computational skills to turn complex information into meaningful solutions for real-world challenges.
+
+Before this journey, I built my professional foundation in Indonesia’s energy sector, working for several years in Human Capital field. I also hold degrees in Industrial Engineering and Law, which together shaped my ability to connect technical, human, and regulatory perspectives.
+
+I’m passionate about applying data-driven approaches to solve human capital problems, helping organizations align people strategy, business performance, and long-term sustainability. My work sits at the intersection of analytics, leadership, and purpose — bridging people and numbers to drive lasting impact.
+
+Outside of study and work, I enjoy running, swimming, going to the gym, and traveling, activities that keep me balanced, curious, and inspired.

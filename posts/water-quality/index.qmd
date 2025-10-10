@@ -1,8 +1,8 @@
 ---
-title: "Beyond Expensive Nitrate Sensors: Smarter Ways to Monitor Water Quality"
+title: "How Data Models Could Make River Monitoring More Affordable"
 author: "M. Zulkifli Falaqi"
 date: "2025-10-10"
-categories: [water quality, data modelling, nitrate]
+categories: [water quality, data models, nitrate]
 tags: [GAMM]
 toc: true
 toc-location: right
@@ -21,7 +21,7 @@ Meanwhile, rivers are already monitored by other high-frequency sensors that mea
 
 That’s the problem explored by [Kermorvant et al. (2023)](https://doi.org/10.1371/journal.pone.0287640). Previous studies using Neural Networks, Random Forests, or GLMM focused mainly on prediction and struggled to explain underlying relationships. Here, the authors used Generalised Additive Mixed Models (GAMM) that is flexible enough to capture curved, site-specific patterns yet interpretable enough to reveal how each variable influences nitrate. Their approach points to a practical solution for one of water science’s problems: how to monitor nitrate continuously, affordably, and meaningfully.
 
-## 🔍 Analysis {#sec-analysis}
+## 🔍 Turning Ordinary Sensors Into Smart Ones {#sec-analysis}
 
 After framing the problem, the next step was to test whether simple, fast sensors could truly stand in for the costly nitrate instruments. To do this, [Kermorvant et al. (2023)](https://doi.org/10.1371/journal.pone.0287640) used open environmental data and advanced statistical modeling to explore how different water-quality variables interact with nitrate across a range of climates and landscapes.
 
@@ -111,7 +111,7 @@ Deviance explained indicated that the relative importance of variables differs a
 ::: {#fig-importance}
 ![](images/clipboard-304808532.png){fig-align="center" width="460"}
 
-Relative importance of variables at each site. Total deviance explained by each GAMM was 99% for all three sites.
+Relative importance of variables differ at each site.
 :::
 
 #### Model performance
