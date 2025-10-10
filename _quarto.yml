@@ -4,6 +4,7 @@
 
   website:
     title: "blog-template"
+    favicon: "images/favicon.png"
     navbar:
       right:
         - about.qmd
