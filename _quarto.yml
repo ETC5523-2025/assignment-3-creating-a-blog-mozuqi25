@@ -11,20 +11,18 @@
           file: about.qmd
         - icon: github
           href: https://github.com/mozuqi25/
+    page-footer:
+      left: |
+        **M. Zulkifli Falaqi**<br>
+        © 2025
+      right:
+        - icon: github
+          href: https://github.com/mozuqi25
+        - icon: envelope
+          href: mailto:mfal0012@student.monash.edu
+        - icon: twitter
+          href: https://www.x.com/mozuqi/
 
-  page-footer:
-    background: dark
-    left: |
-      **M. Zulkifli Falaqi**<br>
-      © 2025
-    right:
-      - icon: github
-        href: https://github.com/mozuqi25
-      - icon: envelope
-        href: mailto:mfal0012@student.monash.edu
-      - icon: twitter
-        href: https://www.x.com/mozuqi/
-      - text: "Melbourne, VIC, Australia"
 
   format:
     html:
