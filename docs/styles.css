@@ -1,9 +1,9 @@
 body {
-  background-color: #e6d7c3; /* fallback beige */
+  background-color: #e6d7c3;
   background-image: url("images/paper-bg.jpg");
-  background-repeat: repeat;       /* tile texture */
-  background-attachment: fixed;    /* stays still when scrolling */
-  background-size: auto;           /* keeps natural texture size */
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
 .navbar {
@@ -31,8 +31,8 @@ body {
 
 .quarto-title-banner .listing-category,
 .quarto-title-banner .quarto-category {
-  background-color: white;   /* white pill */
-  color: #664e2a;            /* purple text */
+  background-color: white;
+  color: #664e2a;
   font-weight: 600;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .navbar{ box-shadow:0 2px 8px rgba(0,0,0,.06); }
-img{ border-radius:12px; }
+img{ border-radius:15px; }
 
 nav#TOC a:hover {
   color: #704608 !important ;
