@@ -12,6 +12,9 @@ about:
     - icon: twitter
       text: Twitter
       href: https://x.com/mozuqi/
+    - icon: envelope
+      text: E-Mail
+      href: mailto:mfal0012@student.monash.edu
 
 
 ---
@@ -26,4 +29,4 @@ I’m passionate about applying data-driven approaches to solve human capital pr
 
 Outside of study and work, I enjoy running, swimming, going to the gym, and traveling, activities that keep me balanced, curious, and inspired.
 
-
+-------
