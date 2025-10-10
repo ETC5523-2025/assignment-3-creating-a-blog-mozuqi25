@@ -213,7 +213,7 @@ window.Quarto = {
 <p>After framing the problem, the next step was to test whether simple, fast sensors could truly stand in for the costly nitrate instruments. To do this, <a href="https://doi.org/10.1371/journal.pone.0287640">Kermorvant et al.&nbsp;(2023)</a> used open environmental data and advanced statistical modeling to explore how different water-quality variables interact with nitrate across a range of climates and landscapes.</p>
 <section id="where-the-data-came-from" class="level3">
 <h3 class="anchored" data-anchor-id="where-the-data-came-from">Where the Data Came From</h3>
-<p>The study used data from the National Ecological Observatory Network (NEON), a U.S. research infrastructure that collects environmental data from diverse ecosystems. Three rivers were chosen to span semi-arid, subarctic, and temperate settings (<a href="#tbl-sites" class="quarto-xref">Table&nbsp;1</a>). Each site had a <code>SUNA V2</code> nitrate sensor (15-min) plus high-frequency (1-min) sensors for temperature, dissolved oxygen, specific conductance, turbidity, and water level.</p>
+<p>The study used data from the National Ecological Observatory Network (NEON), a U.S. research infrastructure that collects environmental data from diverse ecosystems. Three rivers were chosen to span semi-arid, subarctic, and temperate settings (see <a href="#tbl-sites" class="quarto-xref">Table&nbsp;1</a>). Each site had a <code>SUNA V2</code> nitrate sensor (15-min) plus high-frequency (1-min) sensors for temperature, dissolved oxygen, specific conductance, turbidity, and water level.</p>
 <div class="cell" data-tbl-cap-location="bottom">
 <div id="tbl-sites" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap-location="bottom">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -334,7 +334,7 @@ Figure&nbsp;3: Relative importance of variables differ at each site.
 <h4 class="anchored" data-anchor-id="model-performance">Model performance</h4>
 <p>As shown in <a href="#tbl-performance" class="quarto-xref">Table&nbsp;2</a>, the analysis directly addressed the problem of relying on costly nitrate sensors by testing how well common, faster measurements could reproduce the same signal.</p>
 <p>Using GAM alone, the model explained about 75–85% of the variation in nitrate concentration, indicating that non-linear relationships among affordable, high-frequency variables already capture most of the nitrate behavior.</p>
-<p>However, the remaining differences revealed short-term temporal fluctuations that these models could not fully describe. By adding the ARIMA component to handle this time-based dependence, the combined GAMM improved substantially—explaining up to 99% of nitrate variation and closely matching the performance of direct nitrate measurements.</p>
+<p>However, the remaining differences revealed short-term temporal fluctuations that these models could not fully describe. By adding the ARIMA component to handle this time-based dependence, the combined GAMM improved substantially, explaining up to 99% of nitrate variation and closely matching the performance of direct nitrate measurements.</p>
 <div class="cell" data-tbl-cap-location="bottom">
 <div id="tbl-performance" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap-location="bottom">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -386,7 +386,7 @@ Table&nbsp;2: Model performance across the three rivers.
 <h2 class="anchored" data-anchor-id="sec-conclusion">So, What Does This Mean?</h2>
 <p>This study from <a href="https://doi.org/10.1371/journal.pone.0287640">Kermorvant et al.&nbsp;(2023)</a> shows that Generalised Additive Mixed Models (GAMM) offer a practical way to address the long-standing problem of monitoring nitrate continuously and affordably. By combining data from fast, low-cost sensors with an interpretable statistical framework, the approach reduces dependence on expensive nitrate instruments like the <code>SUNA V2</code>, while still capturing near-real-time nitrate dynamics.</p>
 <p>The results demonstrate that GAMM can explain most of the variation in nitrate using only common water-quality variables such as temperature, oxygen, conductivity, turbidity, and water level. Because the method remains transparent and adaptable, it can be recalibrated for new sites and used to fill gaps when nitrate sensors fail or are unavailable.</p>
-<p>For organizations or agencies managing water resources, this framework could be integrated into existing monitoring networks. Testing the model with local data would help refine variable relationships and confirm its suitability for regional conditions — ultimately supporting broader, data-driven strategies for managing river health and water quality.</p>
+<p>For organizations or agencies managing water resources, this framework could be integrated into existing monitoring networks. Testing the model with local data would help refine variable relationships and confirm its suitability for local conditions.</p>
 </section>
 <section id="sec-references" class="level2">
 <h2 class="anchored" data-anchor-id="sec-references">References</h2>

@@ -27,7 +27,7 @@ After framing the problem, the next step was to test whether simple, fast sensor
 
 ### Where the Data Came From
 
-The study used data from the National Ecological Observatory Network (NEON), a U.S. research infrastructure that collects environmental data from diverse ecosystems. Three rivers were chosen to span semi-arid, subarctic, and temperate settings (@tbl-sites). Each site had a `SUNA V2` nitrate sensor (15-min) plus high-frequency (1-min) sensors for temperature, dissolved oxygen, specific conductance, turbidity, and water level.
+The study used data from the National Ecological Observatory Network (NEON), a U.S. research infrastructure that collects environmental data from diverse ecosystems. Three rivers were chosen to span semi-arid, subarctic, and temperate settings (see @tbl-sites). Each site had a `SUNA V2` nitrate sensor (15-min) plus high-frequency (1-min) sensors for temperature, dissolved oxygen, specific conductance, turbidity, and water level.
 
 ```{r}
 #| echo: false
@@ -120,7 +120,7 @@ As shown in @tbl-performance, the analysis directly addressed the problem of rel
 
 Using GAM alone, the model explained about 75–85% of the variation in nitrate concentration, indicating that non-linear relationships among affordable, high-frequency variables already capture most of the nitrate behavior.
 
-However, the remaining differences revealed short-term temporal fluctuations that these models could not fully describe. By adding the ARIMA component to handle this time-based dependence, the combined GAMM improved substantially—explaining up to 99% of nitrate variation and closely matching the performance of direct nitrate measurements.
+However, the remaining differences revealed short-term temporal fluctuations that these models could not fully describe. By adding the ARIMA component to handle this time-based dependence, the combined GAMM improved substantially, explaining up to 99% of nitrate variation and closely matching the performance of direct nitrate measurements.
 
 ```{r}
 #| echo: false
@@ -129,10 +129,6 @@ However, the remaining differences revealed short-term temporal fluctuations tha
 #| label: tbl-performance
 #| tbl-cap: "Model performance across the three rivers."
 #| tbl-cap-location: bottom
-
-library(dplyr)
-library(knitr)
-library(kableExtra)
 
 sites <- tibble::tibble(
   Site = c("Arikaree River", "Caribou Creek", "Lewis Run"),
@@ -158,7 +154,7 @@ The results demonstrate that GAMM can explain most of the variation in nitrate u
 Because the method remains transparent and adaptable, it can be recalibrated for new sites and used to fill gaps when nitrate sensors fail or are unavailable.
 
 For organizations or agencies managing water resources, this framework could be integrated into existing monitoring networks.
-Testing the model with local data would help refine variable relationships and confirm its suitability for regional conditions — ultimately supporting broader, data-driven strategies for managing river health and water quality.
+Testing the model with local data would help refine variable relationships and confirm its suitability for local conditions.
 
 ## References {#sec-references}
 
