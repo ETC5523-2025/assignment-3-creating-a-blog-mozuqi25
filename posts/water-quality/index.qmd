@@ -13,7 +13,7 @@ Do we really need a DNA test every time we need to prove that someone is related
 
 River scientists face a similar challenge, except theirs is about keeping up with change, nitrate levels can fluctuate by the minute, so measurements need to be nearly continuous. Nitrate is a vital nutrient that turns into a problem when there’s too much of it. Excess nitrate can trigger algal blooms, reduce oxygen levels, and disturb aquatic ecosystems, so tracking its movement through rivers is crucial.
 
-## 🌊 The Challenge Beneath the Surface {#sec-problem}
+## The Challenge Beneath the Surface {#sec-problem}
 
 The problem lies in measuring nitrate directly. Instruments like the `SUNA V2` optical nitrate sensor, are expensive, maintenance-heavy, and record data only every 15 minutes. Although this rate is considered high-frequency compared with traditional sampling, it still misses short-term fluctuations that occur with rainfall or biological activity.
 
@@ -21,7 +21,7 @@ Meanwhile, rivers are already monitored by other high-frequency sensors that mea
 
 That’s the problem explored by [Kermorvant et al. (2023)](https://doi.org/10.1371/journal.pone.0287640). Previous studies using Neural Networks, Random Forests, or GLMM focused mainly on prediction and struggled to explain underlying relationships. Here, the authors used Generalised Additive Mixed Models (GAMM) that is flexible enough to capture curved, site-specific patterns yet interpretable enough to reveal how each variable influences nitrate. Their approach points to a practical solution for one of water science’s problems: how to monitor nitrate continuously, affordably, and meaningfully.
 
-## 🔍 Turning Ordinary Sensors Into Smart Ones {#sec-analysis}
+## Turning Ordinary Sensors Into Smart Ones {#sec-analysis}
 
 After framing the problem, the next step was to test whether simple, fast sensors could truly stand in for the costly nitrate instruments. To do this, [Kermorvant et al. (2023)](https://doi.org/10.1371/journal.pone.0287640) used open environmental data and advanced statistical modeling to explore how different water-quality variables interact with nitrate across a range of climates and landscapes.
 
@@ -150,9 +150,9 @@ kbl(sites, booktabs = TRUE, align = "crrr", longtable = TRUE) |>
 
 Approximate AIC values were consistently lower for GAMM than for GAM, confirming that the improvement reflected a better model, not just extra complexity. In short, including the temporal component made the models both more accurate and more reliable.
 
-## 💡 Conclusion {#sec-conclusion}
+## So, What Does This Mean? {#sec-conclusion}
 
-This study shows that Generalised Additive Mixed Models (GAMM) offer a practical way to address the long-standing problem of monitoring nitrate continuously and affordably. By combining data from fast, low-cost sensors with an interpretable statistical framework, the approach reduces dependence on expensive nitrate instruments like the `SUNA V2`, while still capturing near-real-time nitrate dynamics.
+This study from [Kermorvant et al. (2023)](https://doi.org/10.1371/journal.pone.0287640) shows that Generalised Additive Mixed Models (GAMM) offer a practical way to address the long-standing problem of monitoring nitrate continuously and affordably. By combining data from fast, low-cost sensors with an interpretable statistical framework, the approach reduces dependence on expensive nitrate instruments like the `SUNA V2`, while still capturing near-real-time nitrate dynamics.
 
 The results demonstrate that GAMM can explain most of the variation in nitrate using only common water-quality variables such as temperature, oxygen, conductivity, turbidity, and water level.
 Because the method remains transparent and adaptable, it can be recalibrated for new sites and used to fill gaps when nitrate sensors fail or are unavailable.
@@ -160,6 +160,6 @@ Because the method remains transparent and adaptable, it can be recalibrated for
 For organizations or agencies managing water resources, this framework could be integrated into existing monitoring networks.
 Testing the model with local data would help refine variable relationships and confirm its suitability for regional conditions — ultimately supporting broader, data-driven strategies for managing river health and water quality.
 
-## 📚 References {#sec-references}
+## References {#sec-references}
 
 Kermorvant, C., Liquet, B., Litt, G., Hyndman, R. J., Peterson, E. E., Leigh, C., & Mengersen, K. (2023). Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data. PLOS ONE, 18(6), e0287640. <https://doi.org/10.1371/journal.pone.0287640>

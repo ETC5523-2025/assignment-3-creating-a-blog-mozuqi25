@@ -181,15 +181,15 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-problem" id="toc-sec-problem" class="nav-link active" data-scroll-target="#sec-problem">🌊 The Challenge Beneath the Surface</a></li>
-  <li><a href="#sec-analysis" id="toc-sec-analysis" class="nav-link" data-scroll-target="#sec-analysis">🔍 Turning Ordinary Sensors Into Smart Ones</a>
+  <li><a href="#sec-problem" id="toc-sec-problem" class="nav-link active" data-scroll-target="#sec-problem">The Challenge Beneath the Surface</a></li>
+  <li><a href="#sec-analysis" id="toc-sec-analysis" class="nav-link" data-scroll-target="#sec-analysis">Turning Ordinary Sensors Into Smart Ones</a>
   <ul class="collapse">
   <li><a href="#where-the-data-came-from" id="toc-where-the-data-came-from" class="nav-link" data-scroll-target="#where-the-data-came-from">Where the Data Came From</a></li>
   <li><a href="#two-steps-to-smarter-modeling" id="toc-two-steps-to-smarter-modeling" class="nav-link" data-scroll-target="#two-steps-to-smarter-modeling">Two Steps to Smarter Modeling</a></li>
   <li><a href="#sec-finding" id="toc-sec-finding" class="nav-link" data-scroll-target="#sec-finding">What the Research Revealed</a></li>
   </ul></li>
-  <li><a href="#sec-conclusion" id="toc-sec-conclusion" class="nav-link" data-scroll-target="#sec-conclusion">💡 Conclusion</a></li>
-  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references">📚 References</a></li>
+  <li><a href="#sec-conclusion" id="toc-sec-conclusion" class="nav-link" data-scroll-target="#sec-conclusion">So, What Does This Mean?</a></li>
+  <li><a href="#sec-references" id="toc-sec-references" class="nav-link" data-scroll-target="#sec-references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -203,13 +203,13 @@ window.Quarto = {
 <p>Do we really need a DNA test every time we need to prove that someone is related to their parents? A DNA test surely gives the most precise answer, but it also costs time and money. In many cases, simpler clues, like matching blood type, similar eye color, or shared facial traits, when it combined, already tell most of the story.</p>
 <p>River scientists face a similar challenge, except theirs is about keeping up with change, nitrate levels can fluctuate by the minute, so measurements need to be nearly continuous. Nitrate is a vital nutrient that turns into a problem when there’s too much of it. Excess nitrate can trigger algal blooms, reduce oxygen levels, and disturb aquatic ecosystems, so tracking its movement through rivers is crucial.</p>
 <section id="sec-problem" class="level2">
-<h2 class="anchored" data-anchor-id="sec-problem">🌊 The Challenge Beneath the Surface</h2>
+<h2 class="anchored" data-anchor-id="sec-problem">The Challenge Beneath the Surface</h2>
 <p>The problem lies in measuring nitrate directly. Instruments like the <code>SUNA V2</code> optical nitrate sensor, are expensive, maintenance-heavy, and record data only every 15 minutes. Although this rate is considered high-frequency compared with traditional sampling, it still misses short-term fluctuations that occur with rainfall or biological activity.</p>
 <p>Meanwhile, rivers are already monitored by other high-frequency sensors that measure river water variables such as temperature, dissolved oxygen, conductivity, turbidity, and water level every minute. These sensors are cheaper, easier to maintain, and widely deployed. If their combined signals can be used to estimate nitrate accurately, scientists could track nitrate dynamics in near real time without depending solely on costly equipment.</p>
 <p>That’s the problem explored by <a href="https://doi.org/10.1371/journal.pone.0287640">Kermorvant et al.&nbsp;(2023)</a>. Previous studies using Neural Networks, Random Forests, or GLMM focused mainly on prediction and struggled to explain underlying relationships. Here, the authors used Generalised Additive Mixed Models (GAMM) that is flexible enough to capture curved, site-specific patterns yet interpretable enough to reveal how each variable influences nitrate. Their approach points to a practical solution for one of water science’s problems: how to monitor nitrate continuously, affordably, and meaningfully.</p>
 </section>
 <section id="sec-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="sec-analysis">🔍 Turning Ordinary Sensors Into Smart Ones</h2>
+<h2 class="anchored" data-anchor-id="sec-analysis">Turning Ordinary Sensors Into Smart Ones</h2>
 <p>After framing the problem, the next step was to test whether simple, fast sensors could truly stand in for the costly nitrate instruments. To do this, <a href="https://doi.org/10.1371/journal.pone.0287640">Kermorvant et al.&nbsp;(2023)</a> used open environmental data and advanced statistical modeling to explore how different water-quality variables interact with nitrate across a range of climates and landscapes.</p>
 <section id="where-the-data-came-from" class="level3">
 <h3 class="anchored" data-anchor-id="where-the-data-came-from">Where the Data Came From</h3>
@@ -383,13 +383,13 @@ Table&nbsp;2: Model performance across the three rivers.
 </section>
 </section>
 <section id="sec-conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="sec-conclusion">💡 Conclusion</h2>
-<p>This study shows that Generalised Additive Mixed Models (GAMM) offer a practical way to address the long-standing problem of monitoring nitrate continuously and affordably. By combining data from fast, low-cost sensors with an interpretable statistical framework, the approach reduces dependence on expensive nitrate instruments like the <code>SUNA V2</code>, while still capturing near-real-time nitrate dynamics.</p>
+<h2 class="anchored" data-anchor-id="sec-conclusion">So, What Does This Mean?</h2>
+<p>This study from <a href="https://doi.org/10.1371/journal.pone.0287640">Kermorvant et al.&nbsp;(2023)</a> shows that Generalised Additive Mixed Models (GAMM) offer a practical way to address the long-standing problem of monitoring nitrate continuously and affordably. By combining data from fast, low-cost sensors with an interpretable statistical framework, the approach reduces dependence on expensive nitrate instruments like the <code>SUNA V2</code>, while still capturing near-real-time nitrate dynamics.</p>
 <p>The results demonstrate that GAMM can explain most of the variation in nitrate using only common water-quality variables such as temperature, oxygen, conductivity, turbidity, and water level. Because the method remains transparent and adaptable, it can be recalibrated for new sites and used to fill gaps when nitrate sensors fail or are unavailable.</p>
 <p>For organizations or agencies managing water resources, this framework could be integrated into existing monitoring networks. Testing the model with local data would help refine variable relationships and confirm its suitability for regional conditions — ultimately supporting broader, data-driven strategies for managing river health and water quality.</p>
 </section>
 <section id="sec-references" class="level2">
-<h2 class="anchored" data-anchor-id="sec-references">📚 References</h2>
+<h2 class="anchored" data-anchor-id="sec-references">References</h2>
 <p>Kermorvant, C., Liquet, B., Litt, G., Hyndman, R. J., Peterson, E. E., Leigh, C., &amp; Mengersen, K. (2023). Understanding links between water-quality variables and nitrate concentration in freshwater streams using high frequency sensor data. PLOS ONE, 18(6), e0287640. <a href="https://doi.org/10.1371/journal.pone.0287640" class="uri">https://doi.org/10.1371/journal.pone.0287640</a></p>
 
 
